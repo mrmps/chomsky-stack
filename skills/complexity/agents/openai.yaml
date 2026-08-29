@@ -1,0 +1,4 @@
+interface:
+  display_name: "Complexity"
+  short_description: "Minimize complexity and hidden coupling"
+  default_prompt: "Use $complexity to simplify this system without hiding necessary behavior."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meaningful Contribution"
+  short_description: "Ship code backed by convincing evidence"
+  default_prompt: "Use $meaningful-contribution to implement this change and prove it works."

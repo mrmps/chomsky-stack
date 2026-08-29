@@ -38,7 +38,7 @@ skill_dirs.each do |directory_name|
 
   begin
     metadata = YAML.safe_load(match[1], permitted_classes: [], aliases: false)
-  rescue Psych::SyntaxError => error
+  rescue Psych::Exception => error
     errors << "#{directory_name}: invalid YAML (#{error.message.lines.first.strip})"
     next
   end
@@ -68,7 +68,8 @@ skill_dirs.each do |directory_name|
     end
 
     default_prompt = interface["default_prompt"]
-    unless default_prompt.is_a?(String) && default_prompt.include?("$#{directory_name}")
+    skill_marker = /\$#{Regexp.escape(directory_name)}(?![A-Za-z0-9_-])/
+    unless default_prompt.is_a?(String) && default_prompt.match?(skill_marker)
       errors << "#{directory_name}: default prompt must mention $#{directory_name}"
     end
   rescue Psych::Exception => error

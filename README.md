@@ -60,7 +60,7 @@ There is no runtime, telemetry, state directory, setup script, update checker, d
 
 `unsummarizable` is inspired by [Paul Graham's description of unsummarizable writing](https://x.com/paulg/status/2062891972042637573).
 
-`gr`, `meaningful-contribution`, `complexity`, `unsummarizable`, and this compilation are by [Michael Ryaboy](https://x.com/michael_chomsky).
+`gr`, `meaningful-contribution`, `complexity`, `unsummarizable`, and this compilation are by [Michael Ryaboy](https://x.com/michael_chomsky). Meaningful contribution I found from someone on X. Thanks to that person, it's one of my favorites!
 
 ## License
 

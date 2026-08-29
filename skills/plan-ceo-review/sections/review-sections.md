@@ -305,7 +305,7 @@ For each TODO, describe:
 * **Priority:** P1/P2/P3
 * **Depends on / blocked by:** Any prerequisites or ordering constraints.
 
-Then present options: **A)** Add to TODOS.md **B)** Skip — not valuable enough **C)** Build it now in this PR instead of deferring.
+Then present options: **A)** Add to TODOS.md **B)** Skip — not valuable enough.
 
 ### Scope Expansion Decisions (EXPANSION and SELECTIVE EXPANSION only)
 

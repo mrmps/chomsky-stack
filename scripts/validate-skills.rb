@@ -56,9 +56,22 @@ skill_dirs.each do |directory_name|
 
   begin
     agent_metadata = YAML.safe_load(File.read(agent_path), permitted_classes: [], aliases: false)
-    default_prompt = agent_metadata.dig("interface", "default_prompt")
-    errors << "#{directory_name}: default prompt must mention $#{directory_name}" unless default_prompt&.include?("$#{directory_name}")
-  rescue Psych::SyntaxError => error
+    unless agent_metadata.is_a?(Hash)
+      errors << "#{directory_name}: agents/openai.yaml must be a mapping"
+      next
+    end
+
+    interface = agent_metadata["interface"]
+    unless interface.is_a?(Hash)
+      errors << "#{directory_name}: agents/openai.yaml interface must be a mapping"
+      next
+    end
+
+    default_prompt = interface["default_prompt"]
+    unless default_prompt.is_a?(String) && default_prompt.include?("$#{directory_name}")
+      errors << "#{directory_name}: default prompt must mention $#{directory_name}"
+    end
+  rescue Psych::Exception => error
     errors << "#{directory_name}: invalid agents/openai.yaml (#{error.message.lines.first.strip})"
   end
 end

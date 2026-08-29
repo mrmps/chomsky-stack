@@ -1,0 +1,4 @@
+interface:
+  display_name: "Greptile Review, Merge, and Deploy"
+  short_description: "Review, fix, merge, deploy, and verify a PR"
+  default_prompt: "Use $gr to review the current PR with Greptile, fix every actionable issue, verify it, merge it, deploy it through the repository's production workflow, and verify production."

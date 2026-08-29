@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unsummarizable"
+  short_description: "Write dense prose without removable fluff"
+  default_prompt: "Use $unsummarizable to make this writing denser and harder to summarize without losing ideas."

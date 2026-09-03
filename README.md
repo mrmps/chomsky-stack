@@ -1,6 +1,6 @@
 # Chomsky Stack
 
-Six opinionated agent skills for deciding what to build, keeping it simple, writing without fluff, and proving that shipped work actually works.
+Seven opinionated agent skills for deciding what to build, keeping it simple, removing code slop, writing without fluff, and proving that shipped work actually works.
 
 Created by [Michael Ryaboy](https://x.com/michael_chomsky) (`@michael_chomsky`). Modeled after [better-gstack](https://github.com/mrmps/better-gstack), with all of its skills included.
 
@@ -16,6 +16,7 @@ npx skills add mrmps/chomsky-stack
 | `plan-ceo-review` | Reviews whether a plan should expand, hold, or shrink, then pressure-tests its execution. |
 | `unsummarizable` | Removes fluff until taking out more words would remove interesting ideas. |
 | `complexity` | Reads [How Complex Systems Fail](https://how.complexsystems.fail/) and minimizes complexity. |
+| `junk-detection` | Audits code for reward hacking, compatibility cruft, accidental complexity, wrong abstractions, and reinvented machinery. |
 | `meaningful-contribution` | Requires behavior-changing work to be demonstrated with direct evidence, regression coverage, and edge-case checks. |
 | `gr` | Runs the full Greptile review, fix, verification, merge, deployment, and production-validation loop. |
 
@@ -30,7 +31,7 @@ npx skills add mrmps/chomsky-stack
 Install one skill:
 
 ```bash
-npx skills add mrmps/chomsky-stack --skill unsummarizable
+npx skills add mrmps/chomsky-stack --skill junk-detection
 ```
 
 Or clone and copy the folders into any agent that reads `SKILL.md`:
@@ -46,6 +47,7 @@ cp -r chomsky-stack/skills/* ~/.claude/skills/
 skills/
 ├── complexity/
 ├── gr/
+├── junk-detection/
 ├── meaningful-contribution/
 ├── office-hours/
 ├── plan-ceo-review/
@@ -60,7 +62,7 @@ There is no runtime, telemetry, state directory, setup script, update checker, d
 
 `unsummarizable` is inspired by [Paul Graham's description of unsummarizable writing](https://x.com/paulg/status/2062891972042637573).
 
-`gr`, `meaningful-contribution`, `complexity`, `unsummarizable`, and this compilation are by [Michael Ryaboy](https://x.com/michael_chomsky). Meaningful contribution I found from someone on X. Thanks to that person, it's one of my favorites!
+`gr`, `junk-detection`, `meaningful-contribution`, `complexity`, `unsummarizable`, and this compilation are by [Michael Ryaboy](https://x.com/michael_chomsky). Meaningful contribution I found from someone on X. Thanks to that person, it's one of my favorites!
 
 ## License
 

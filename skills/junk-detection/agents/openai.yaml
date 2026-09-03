@@ -1,0 +1,4 @@
+interface:
+  display_name: "Junk Detection"
+  short_description: "Find reward-hacked and needless code complexity"
+  default_prompt: "Use $junk-detection to audit this codebase for compatibility cruft, accidental complexity, reinvented wheels, and reward-hacked code."

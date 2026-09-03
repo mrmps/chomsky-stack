@@ -7,6 +7,7 @@ SKILLS_DIR = File.join(ROOT, "skills")
 EXPECTED_SKILLS = %w[
   complexity
   gr
+  junk-detection
   meaningful-contribution
   office-hours
   plan-ceo-review

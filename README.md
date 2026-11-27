@@ -1,6 +1,6 @@
 # Chomsky Stack
 
-Seven opinionated agent skills for deciding what to build, keeping it simple, removing code slop, writing without fluff, and proving that shipped work actually works.
+Eight opinionated agent skills for thinking bigger, deciding what to build, keeping it simple, removing code slop, writing without fluff, and proving that shipped work actually works.
 
 Created by [Michael Ryaboy](https://x.com/michael_chomsky) (`@michael_chomsky`). Modeled after [better-gstack](https://github.com/mrmps/better-gstack), with all of its skills included.
 
@@ -12,6 +12,7 @@ npx skills add mrmps/chomsky-stack
 
 | Skill | What it does |
 |---|---|
+| `bigger` | Pushes the agent to attempt problems orders of magnitude more ambitious, and to verify ruthlessly. |
 | `office-hours` | Tests demand, the status quo, user specificity, the narrowest wedge, observed behavior, and future fit before code is written. |
 | `plan-ceo-review` | Reviews whether a plan should expand, hold, or shrink, then pressure-tests its execution. |
 | `unsummarizable` | Removes fluff until taking out more words would remove interesting ideas. |
@@ -45,6 +46,7 @@ cp -r chomsky-stack/skills/* ~/.claude/skills/
 
 ```text
 skills/
+├── bigger/
 ├── complexity/
 ├── gr/
 ├── junk-detection/
@@ -62,7 +64,7 @@ There is no runtime, telemetry, state directory, setup script, update checker, d
 
 `unsummarizable` is inspired by [Paul Graham's description of unsummarizable writing](https://x.com/paulg/status/2062891972042637573).
 
-`gr`, `junk-detection`, `meaningful-contribution`, `complexity`, `unsummarizable`, and this compilation are by [Michael Ryaboy](https://x.com/michael_chomsky). Meaningful contribution I found from someone on X. Thanks to that person, it's one of my favorites!
+`bigger`, `gr`, `junk-detection`, `meaningful-contribution`, `complexity`, `unsummarizable`, and this compilation are by [Michael Ryaboy](https://x.com/michael_chomsky). Meaningful contribution I found from someone on X. Thanks to that person, it's one of my favorites!
 
 ## License
 

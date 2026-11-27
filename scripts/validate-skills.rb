@@ -5,6 +5,7 @@ require "yaml"
 ROOT = File.expand_path("..", __dir__)
 SKILLS_DIR = File.join(ROOT, "skills")
 EXPECTED_SKILLS = %w[
+  bigger
   complexity
   gr
   junk-detection

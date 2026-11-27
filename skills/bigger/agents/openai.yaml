@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bigger"
+  short_description: "Think orders of magnitude bigger"
+  default_prompt: "Use $bigger to attempt this problem at a far more ambitious scale, then verify ruthlessly."
